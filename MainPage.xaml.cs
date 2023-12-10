@@ -1,4 +1,4 @@
-﻿namespace MauiRepro202312PointerPressedRelative;
+﻿namespace MauiPointerPressedRelative;
 
 public partial class MainPage : ContentPage
 {
@@ -20,5 +20,23 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private void PointerGestureRecognizer_PointerMoved(object sender, PointerEventArgs e)
+    {
+        Point? position = e.GetPosition(relativeTo: (View)sender);
+        this.debugLabel.Text = $"Position {position}; Pointer MOVED.";
+    }
+
+    private void PointerGestureRecognizer_PointerPressed(object sender, PointerEventArgs e)
+    {
+        Point? position = e.GetPosition(relativeTo: (View)sender);
+        this.debugLabel.Text = $"Position {position}; Pointer PRESSED.";
+    }
+
+    private void PointerGestureRecognizer_PointerReleased(object sender, PointerEventArgs e)
+    {
+        Point? position = e.GetPosition(relativeTo: (View)sender);
+        this.debugLabel.Text = $"Position {position}; Pointer RELEASED.";
+    }
 }
 

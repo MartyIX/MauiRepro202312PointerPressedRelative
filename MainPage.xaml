@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiRepro202312PointerPressedRelative.MainPage">
+             x:Class="MauiPointerPressedRelative.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+
+            <Label x:Name="debugLabel" Text="Pointer position: N/A" />
+
             <Image
                 Source="dotnet_bot.png"
+                BackgroundColor="LightBlue"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="dot net bot in a race car number eight">
+                <Image.GestureRecognizers>
+                    <PointerGestureRecognizer 
+                        PointerPressed="PointerGestureRecognizer_PointerPressed"
+                        PointerReleased="PointerGestureRecognizer_PointerReleased"
+                        PointerMoved="PointerGestureRecognizer_PointerMoved" />
+                </Image.GestureRecognizers>
+            </Image>
 
             <Label
                 Text="Hello, World!"
