@@ -1,4 +1,4 @@
-﻿namespace MauiRepro202312PointerPressedRelative;
+﻿namespace MauiPointerPressedRelative;
 
 public partial class AppShell : Shell
 {

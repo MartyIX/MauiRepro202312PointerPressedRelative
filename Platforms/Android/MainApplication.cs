@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace MauiRepro202312PointerPressedRelative;
+namespace MauiPointerPressedRelative;
 
 [Application]
 public class MainApplication : MauiApplication

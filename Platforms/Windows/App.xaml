@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="MauiRepro202312PointerPressedRelative.WinUI.App"
+    x:Class="MauiPointerPressedRelative.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:MauiRepro202312PointerPressedRelative.WinUI">
+    xmlns:local="using:MauiPointerPressedRelative.WinUI">
 
 </maui:MauiWinUIApplication>

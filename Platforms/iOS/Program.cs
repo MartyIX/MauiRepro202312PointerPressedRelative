@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiRepro202312PointerPressedRelative;
+namespace MauiPointerPressedRelative;
 
 public class Program
 {

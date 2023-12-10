@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace MauiRepro202312PointerPressedRelative;
+namespace MauiPointerPressedRelative;
 
 public static class MauiProgram
 {

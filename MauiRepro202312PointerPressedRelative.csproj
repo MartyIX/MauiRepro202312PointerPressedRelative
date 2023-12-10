@@ -1,7 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<MauiVersion>8.0.3</MauiVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
@@ -14,17 +18,18 @@
 		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
 		<OutputType>Exe</OutputType>
-		<RootNamespace>MauiRepro202312PointerPressedRelative</RootNamespace>
+		<RootNamespace>MauiPointerPressedRelative</RootNamespace>
 		<UseMaui>true</UseMaui>
+		<UseMauiNuGets>true</UseMauiNuGets>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-
+		
 		<!-- Display name -->
-		<ApplicationTitle>MauiRepro202312PointerPressedRelative</ApplicationTitle>
+		<ApplicationTitle>MauiPointerPressedRelative</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mauirepro202312pointerpressedrelative</ApplicationId>
+		<ApplicationId>com.companyname.mauiPointerPressedRelative</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>

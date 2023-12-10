@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MauiRepro202312PointerPressedRelative;
+namespace MauiPointerPressedRelative;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

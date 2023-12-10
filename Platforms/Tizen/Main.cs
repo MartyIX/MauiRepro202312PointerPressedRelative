@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace MauiRepro202312PointerPressedRelative;
+namespace MauiPointerPressedRelative;
 
 class Program : MauiApplication
 {
